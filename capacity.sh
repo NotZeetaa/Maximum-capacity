@@ -1,5 +1,4 @@
 #!/system/bin/sh
-#
 # Author: NotZeetaa (Github)
 
 # Variables
@@ -9,8 +8,8 @@ DIFFERENCE=$(( $CHARGE_FULL_DESIGN - $CHARGE_FULL ))
 CAPACITY=$(( $CHARGE_FULL / 1000 ))
 CAPACITY_DESIGN=$(( $CHARGE_FULL_DESIGN / 1000 ))
 
+echo -e "\nDesign max capacity: $CAPACITY_DESIGN mAh"
 echo "Current max cappacity: $CAPACITY mAh"
-echo "Design max capacity: $CAPACITY_DESIGN mAh"
-echo "Lost: $(( $DIFFERENCE / 1000 )) mAh"
+echo -e "Lost: $(( $DIFFERENCE / 1000 )) mAh\n"
 
 
